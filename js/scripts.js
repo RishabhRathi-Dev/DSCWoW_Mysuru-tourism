@@ -1,5 +1,13 @@
+function forSearch() {
+  var search = document.getElementById("searched").value;
 
 
+}
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,
+  wrap: false
+})
 
     (function ($) {
     "use strict"; // Start of use strict
