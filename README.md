@@ -1,1 +1,0 @@
-# DSCWoW_Mysuru-tourism
