@@ -1,8 +1,23 @@
-/*!
-    * Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-    */
+$(document).ready(function() {
+    // REQUIRES jquery.livequery
+    $('.google-map iframe:visible').livequery(function() {
+      var mapFrame = $(this);
+      if (!$(mapFrame).hasClass('map-refreshed')) {
+        mapFrame.attr('src', mapFrame.attr('src')+'');
+        mapFrame.addClass('map-refreshed');
+     }
+ });
+   
+ });
+}
+
+
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,
+  wrap: false
+})
+
     (function ($) {
     "use strict"; // Start of use strict
 
@@ -54,3 +69,31 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+$('.collapse').collapse()
+
+( function( $ ) {
+    $( document ).ready( function(){
+        $('.panel-collapse').removeClass('in');
+        $('.panel-title > a').addClass('collapsed');
+    });
+})( jQuery );

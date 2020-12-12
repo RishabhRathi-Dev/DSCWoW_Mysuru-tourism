@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Mysuru Tourism </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="icon" type="image/x-icon" href="assets/img/Mysuru_festival_pink.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -15,9 +16,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet" />
+       
     </head>
     <body id="page-top">
-       
+
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
                 <img src ="assets/img/Mysuru_festival_pink.png" class= "mysuru-logo">
@@ -26,17 +28,15 @@
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">  
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#places">Places</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Guidelines">Covid-19 Guidelines</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#howtoreach">How to Reach</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#maps">Maps</a></li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class=" btn-outline-success" type="submit">Search</button>
-                    </form>
-                    
+
                 </div>
             </div>
         </nav>
@@ -52,26 +52,81 @@
         </header>
         <!-- About-->
         <section class="about-section text-center" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-white mb-4">About Mysuru</h2>
-                        <p class="text-white-50">
-                            Description
-                        </p>
-                    </div>
-                </div>
-                <img class="img-fluid" src="assets/img/mysuruImg1.jpg" alt="" />
-            </div>
+            <!--Carousel Wrapper-->
+            <h2 style="text-decoration-color:white; text-align:center;">About</h2>
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="assets/img/planned1.jpg"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">One of the First Planned City in India</h3>
+          <p>Treat yourself by exploring one of the first planned city of India</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="assets/img/clean1.jpg"
+            alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">One of the Cleanest City in the Country</h3>
+          <p>Experience the freshness of travelling in one of the cleanest city in country.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="assets/img/wifi1.jpg"
+            alt="Third slide">
+          <div class="mask rgba-black-slight"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">First WiFi enabled City in the Country</h3>
+          <p>Mysuru is the second city after Jerusalem to become a WiFi enabled city in the world in 2010.</p>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
         </section>
         <!-- Places-->
         <section class="projects-section bg-light" id="places">
             <div class="container">
+                <h2 style="text-decoration-color: black; text-align:center;">Places</h2>
+                <pre>
+
+                    
+                </pre>
                 <!-- Featured Place-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/mysurupalace1.jpg" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
+                        <div class="featured-text text-center text-lg-left" id = "Mysuru Palace" href = "#Mysuru Palace">
                             <h4>Mysuru Palace</h4>
                             <p class="text-black-50 mb-0">An incredibly breathtaking example of Indo - Saracenic style of architecture, the Mysore Palace is a magnificent edifice located in Mysore in the state of Karnataka. Also known as the Amba Vilas Palace, it is the former palace of the royal family of Mysore and is still their official residence. Mysore Palace was built in the year 1912 for the 24th Ruler of the Wodeyar Dynasty and is counted amongst one of the biggest palaces in the country.</p>
                         </div>
@@ -85,7 +140,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Jaganmohan Palace</h4>
-                                    <p class="mb-0 text-white-50">Situated in the royal city of Mysuru, the Jaganmohan Palace is a spectacular edifice that has an illustrious history attached to its name. It was used by the Wodeyars of Mysuru when their main residence Amba Vilas Palace was under renovations post a fire incident.The Jaganmohan Palace was converted into a magnificent art gallery and today hosts some of the most exquisite pieces of artwork for the public to see.</p>
+                                    <p class="mb-0 text-white-50">Situated in the royal city of Mysuru, the Jaganmohan Palace is a spectacular edifice that has an illustrious history attached to its name. The Jaganmohan Palace was converted into a magnificent art gallery and today hosts some of the most exquisite pieces of artwork for the public to see.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -108,8 +163,8 @@
                     </div>
                 </div>
                 <div><p>
-                                           
-                                                                
+
+
                 </p></div>
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/railmuseum1.jpg" alt="" /></div>
@@ -118,7 +173,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Rail Muesum</h4>
-                                    <p class="mb-0 text-white-50">The Mysuru Rail Museum is the second of its kind in India, right after the National Railways Museum of Delhi. It was built in the year 1979 by the Indian Railways and has been the safehouse of Railway collectables ever since. The museum basically depicts the journey and development of the Indian railways through an opulent collection of photographs and various other items. With a plethora of information and insight into the intricacies of the railway engine, Mysuru Rail Museum is especially enjoyable for children up to 10 years of age.</p>
+                                    <p class="mb-0 text-white-50">The Mysuru Rail Museum is the second of its kind in India, right after the National Railways Museum of Delhi. The museum depicts the journey and development of the Indian railways through an opulent collection of photos and various other items.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -141,8 +196,8 @@
                     </div>
                 </div>
                 <div><p>
-                                           
-                                                                
+
+
                 </p></div>
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/brindavan1.jpg" alt="" /></div>
@@ -161,7 +216,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Mysuru Zoo</h4>
-                                    <p class="mb-0 text-white-50">Located near the palace in Mysuru, The Zoological Garden covers an area of 157 acres. It is one of the oldest and most famous zoos in India. It plays the role of an orphanage to the abandoned animals. Various exhibitions are regularly held here with an insect exhibition stealing the show. Following this, the Zoo carries forward certain Education Programmes such as Youth Club activities, Literary Competitions, and Summer Camp activities. The Karanji Lake was put under Zoo jurisdiction in 1976 and since has been a calm and serene place for boating.</p>
+                                    <p class="mb-0 text-white-50">Located near the palace in Mysuru, The Zoological Garden covers an area of 157 acres. It is one of the oldest and most famous zoos in India. It plays the role of an orphanage to the abandoned animals. Various exhibitions are regularly held here with an insect exhibition stealing the show. </p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -176,7 +231,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Shuka Vana</h4>
-                                    <p class="mb-0 text-white-50">Home to over 2000 birds, the Shuka Vana in Mysuru is a must visit for ornithophiles and nature lovers. With over 450 varied species, this striking 50m high aviary spanning an area of 1 acre currently holds the record for most bird species in an aviary in the Guinness Book of World Records. This unique park, commonly known as parrot park, is a part of the Avadhoota Datta Peetham in the Sri Ganapathi Sachidananda Ashram, and also serves as a rehabilitation centre for abused, injured and abandoned birds. One can find many rare species of parrots flying around this beautiful enclosure.</p>
+                                    <p class="mb-0 text-white-50">The Shuka Vana is a must visit for ornithophiles and nature lovers. With over 450 varied species, it holds the record for most bird species in an aviary in the Guinness Book of World Records.</p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -184,8 +239,8 @@
                     </div>
                 </div>
                 <div><p>
-                                           
-                                                                
+
+
                 </p></div>
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/bonsaigarden1.jpg" alt="" /></div>
@@ -194,7 +249,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Bonsai Garden</h4>
-                                    <p class="mb-0 text-white-50">One of the more unique attractions of the Royal Mysuru, the Bonsai Garden of Mysuru is home to over a 100 different varieties of Bonsai trees spread across this vast estate. It is a part of the Avadoota Datta Peetham of the Sri Ganapathi Sachidananda Ashrama.The garden hosts 450 miniature tree across an area of 4 acres, filled with these quirky dwarf trees.This garden is also the venue for bonsai conventions held during December. These 3-day seminars see experts from different parts of the world conducting workshops on bonsai plants.</p>
+                                    <p class="mb-0 text-white-50">The Bonsai Garden of Mysuru is home to over a 100 different varieties of Bonsai trees spread across this vast estate.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -217,8 +272,8 @@
                     </div>
                 </div>
                 <div><p>
-                                           
-                                                                
+
+
                 </p></div>
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/masinagudi.jpg" alt="" /></div>
@@ -227,7 +282,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Masinagudi</h4>
-                                    <p class="mb-0 text-white-50">Masinagudi is a serene and tranquil hill station located near Mysuru in the Nilgiri district. A haven for animal and bird lovers, this place is a mesmerizing and spectacular place to be close to nature. This is a great place to get away from the monotony of daily life and enjoy some peaceful time relaxing. The variegated hills and verdant trees that surround the place makes it look magical and beautiful.</p>
+                                    <p class="mb-0 text-white-50">Masinagudi is a serene and tranquil hill station located near Mysuru in the Nilgiri district. A haven for animal and bird lovers, this place is a mesmerizing and spectacular place to be close to nature. The variegated hills and verdant trees that surround the place makes it look magical and beautiful.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -251,7 +306,7 @@
                 </div>
                 <div><p>
 
-                            
+
                 </p></div>
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/somnathpurtemple1.jpg" alt="" /></div>
@@ -270,7 +325,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Chamundeshwari Temple</h4>
-                                    <p class="mb-0 text-white-50">The Chamundeshwari Temple is a traditional Hindu temple located on the eastern edge of Mysuru at the height of 1000ft on the Chamundi hills. Dedicated to and named after goddess Durga, the temple also has statues of Nandi and Mahishasura, the demon. Being one of the oldest temples in the palace city of Mysuru, the temple is a must-visit attraction for the travellers. The Chamundeshwari Temple is considered as a Shakti Peetha and is one among the 18 Maha Shakti Peethas.</p>
+                                    <p class="mb-0 text-white-50">The Chamundeshwari Temple is a traditional Hindu temple located on the eastern edge of Mysuru at the height of 1000ft on the Chamundi hills. Dedicated to and named after goddess Durga, the temple also has statues of Nandi and Mahishasura, the demon. The Chamundeshwari Temple is considered as a Shakti Peetha and is one among the 18 Maha Shakti Peethas.</p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -293,8 +348,8 @@
                     </div>
                 </div>
                 <div><p>
-                                           
-                                                                
+
+
                 </p></div>
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/trinesvaraswamytemple1.jpg" alt="" /></div>
@@ -326,26 +381,164 @@
                     </div>
                 </div>
                 <div><p>
-            
-                
+
+
             </div>
             
+            </div>
+
         </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-inline d-flex">
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
-                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
-                        </form>
+        <section id = "Guidelines">
+
+            <p><pre>
+
+                
+            </pre>
+
+            </p>
+            
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h3 style="text-align: center; text-decoration-color: black;">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Covid-19 Travel Guidelines
+                      </button>
+                    </h3>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+<pre>
+Guidelines For International Arrival
+The following is the latest revised guidelines for International Arrivals issued by the Ministry of Health & Family Welfare.
+                            
+Before planning for travel: 
+    
+(a) All the travelers are required to submit a self-declaration form on (www.newdelhiairport.in ) at least 72 hours before the travel or physically after the arrival.
+                            
+(b) An undertaking form must be provided at the portal, mentioning that they would undergo facility/home quarantine/ self-monitor their health for the next 14 days.
+                            
+(c) Exemption from institutional quarantine, i.e. 14 days of home quarantine will be given only for compelling reasons. Travelers may also seek exemption from institutional quarantine by submitting a negative RT-PCR test report.
+                            
+(d) Travelers arriving without RT-PCR negative certificate and not opting for RT PCR test at airport (if the facility is available)/arriving at an airport where testing the facility is not available will have to undergo mandatory 7 days’ institutional quarantine and 7 days’ home quarantine.
+                            
+Before boarding:
+    
+(a) Download the Aarogya Setu app.
+                            
+(b) Only asymptomatic travelers will be allowed to board after the thermal screening.
+                            
+(c) Suitable precautionary measures such as disinfection, social distancing, and environmental sanitation shall be ensured at the airports.
+                            
+During travel:
+
+(a) Passengers who had not filled the self-declaration form at the online portal would be required to fill the same at the airport/seaport/land port.
+                            
+(b) While onboard, required precautions such as wearing masks, environmental hygiene, respiratory hygiene, hand hygiene etc. are a must. 
+                            
+On arrival:
+
+(a) Social distancing and personal hygiene must be ensured during the whole travel.
+                            
+(b) Thermal screening would be carried out by the Health officials. The self-declaration form shall be shown to the airport health staff.
+                            
+(c) The passengers found to be symptomatic during screening shall be immediately isolated and taken to a medical facility.
+                            
+(d) Passengers shall be taken to suitable institutional quarantine facilities, to be arranged by the respective State/ UT Governments. They will be quarantined for a minimum of 7 days. Testing will be done as per the ICMR protocol. 
+                            
+International passengers arriving at seaports/land ports :
+                             
+ 1. All the passengers arriving through seaports/land ports will also have to undergo the same protocol as mentioned above, except the facility for online registration is not available for such passengers currently.
+                             
+ 2. Such passengers should submit the self-declaration form to the concerned authorities on arrival.
+    
+                            
+Guidelines for Domestic Travel
+    
+Air:
+    
+ 1. Passengers must install Arogyasethu app and fill in the self-declaration form. Details of the self-declaration form must be accurate, else penal action can be taken against the passenger.
+                            
+ 2. Please ensure a valid domestic mobile number is provided in the booking.
+                            
+ 3. It is mandatory that each and every passenger must be tele- checked in prior arrival at the airport.
+                            
+ 4. Passengers to web check in through https://icheck.sita.aero/iCheckWebIX/Home 24 hours to 2 hours before departure of your flight.
+                            
+ 5. Passengers must carry the boarding pass to the airport.
+                            
+ 6. Details of passenger name and PNR must be affixed or tied with a strong string to the baggage, clearly and securely on the suitcase before airport arrival.
+                            
+ 7. Only 1 check-in baggage and 1 hand baggage allowed.
+                            
+ 8. Baggage Trolleys to be used sparingly at the Airport.
+                            
+ 9. Report at least minimum two hours prior departure but not more than 4 hours prior to the departure.
+                            
+ 10. Complete the check-in and baggage drop at least one-hour prior to departure.
+    
+Railways and Road:
+    
+ 1. Passengers must install Arogyasethu app and fill in the self-declaration form. Details of the self-declaration form must be accurate, else penal action can be taken against the passenger.
+                            
+ 2. Please ensure a valid domestic mobile number is provided in the booking.
+</pre>
                     </div>
+                  </div>
                 </div>
             </div>
+            <pre>
+
+                
+            </pre>
+
         </section>
+
+        <section class="projects-section bg-light" id = "howtoreach">
+            <h2 style="text-decoration-color: black; text-align:center;">How to Reach</h2>
+            <h5 style="text-decoration-color: black; text-align:center;">By Air :</h5>
+            <p>
+                Mysore Airport also known as Mandakalli airport is a domestic airport that is situated at a distance of 14 km from Srirangapatnam. Nearest International airport is the Bangalore International Airport that serves the city providing flight services for almost every major cities. Taxis and cab facilities are available from the airport to various places.    
+            </p>
+            <p>
+
+
+            </p>
+            <h5 style="text-decoration-color: black; text-align:center;">By Train :</h5>
+            <p>
+                Mysore railway station is located in the heart of the main city. The rail journey proves to be a convenient option. Therefore you do not need to worry about how to reach Mysore.
+            </p>
+            <p>
+
+
+            </p> 
+            <h5 style="text-decoration-color: black; text-align:center;">By Road :</h5>
+            <p>
+                Karnataka State Road Transport Corporation provides a large number of buses routed for various destinations. There are a number of private bus operators as well offering different types of buses like Private A/C, Volvo, Deluxe buses for the tourist travelling to Mysore. Bangalore (148 km), Coimbatore (204 km) and Coonor (147km) are some of the cities that are connected by the road and can be visited on your way.
+            </p>
+        </section>
+
+        <!-- Map -->
+        <section class="signup-section" id="maps">
+            <div class = "Map" id = "embeddedmap">
+                 
+
+                <h4 class="text-white" style="text-align: center;">Places to visit</h4> 
+                
+                <p style="text-align: center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d72581.67120804859!2d76.61936918800129!3d12.30682428733502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1splaces%20to%20visit%20in%20mysore!5e0!3m2!1sen!2sin!4v1607711383601!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </p>
+              <p>
+
+              </p>
+              <h4 class="text-white" style="text-align: center;">Hotels</h4>
+              <p style="text-align:center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62368.73434775883!2d76.6299032666578!3d12.312696122618547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shotels%20in%20mysore!5e0!3m2!1sen!2sin!4v1607753656568!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+              </p>
+              </div>
+        </section>
+        
         <!-- Contact-->
         <section class="contact-section bg-black">
             <div class="container">
@@ -382,10 +575,15 @@
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                    
+                    <a class="mx-2" href="https://www.instagram.com/mysuru/"><i class="fab fa-instagram"></i></a>
                 </div>
+                <div>
+                  <p>
+
+                  </p>
+                </div>
+                
             </div>
         </section>
         <!-- Footer-->
