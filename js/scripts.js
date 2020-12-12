@@ -90,3 +90,10 @@ for (i = 0; i < acc.length; i++) {
 }
 
 $('.collapse').collapse()
+
+( function( $ ) {
+    $( document ).ready( function(){
+        $('.panel-collapse').removeClass('in');
+        $('.panel-title > a').addClass('collapsed');
+    });
+})( jQuery );
