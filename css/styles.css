@@ -179,7 +179,7 @@ samp {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto;
+  white-space: pre-wrap;
   -ms-overflow-style: scrollbar;
 }
 
@@ -4415,7 +4415,11 @@ input[type=button].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration-color: blue;
+  background: url("../assets/img/covid1.jpg");
 }
 
 .card-title {
@@ -4578,6 +4582,7 @@ input[type=button].btn-block {
 
 .accordion {
   overflow-anchor: none;
+  
 }
 .accordion > .card {
   overflow: hidden;
@@ -10338,4 +10343,44 @@ body {
   height:  50px;
   width : 50px;
 
+}
+
+.highlighted {
+  background-color:yellow;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+#howtoreach {
+  background-image: url("../assets/img/howtoreach1.jpg");
+}
+
+#Guidelines {
+  background-image: url("../assets/img/covid1.jpg");
 }
